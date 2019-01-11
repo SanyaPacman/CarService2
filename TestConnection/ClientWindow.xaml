@@ -1,11 +1,11 @@
-﻿<Window x:Class="TestConnection.MainWindow"
+﻿<Window x:Class="TestConnection.ClientWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestConnection"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="ClientWindow" Height="350" Width="525">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <ToolBar Height="35" VerticalAlignment="Top">
             <Separator />
-            <Button Name ="ClientWindow" Content="Список клиентов" Click="Button_ClientWindow" Margin="10,0,10,0" />
+            <Button Name ="MainWindow" Content="Назад" Click="Button_MainWindow" Margin="10,0,10,0" />
         </ToolBar>
         <ListBox x:Name="phonesList" ItemsSource="{Binding}" Grid.Row="1">
             <ListBox.ItemTemplate>
@@ -28,7 +28,7 @@
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-        </ListBox>        
+        </ListBox>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Добавить" Margin="10" Click="Add_Click" />
             <Button Content="Изменить" Margin="10" Click="Edit_Click"  />
