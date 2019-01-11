@@ -78,3 +78,6 @@ C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestC
 C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\bin\Debug\TestConnection.exe.config
 C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\obj\Debug\TestConnection.exe
 C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\obj\Debug\TestConnection.pdb
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\bin\Debug\TestConnection.exe.config
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\TestConnection.exe
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\TestConnection.pdb

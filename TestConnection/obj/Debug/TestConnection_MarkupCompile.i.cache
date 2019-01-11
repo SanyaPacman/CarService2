@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\obj\Debug\
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\
 TestConnection
 none
 false
 DEBUG;TRACE
-C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\App.xaml
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\App.xaml
 31974404093
 
 18-1680819067
-19-150198435
+19-1702290566
 MainWindow.xaml;PhoneWindow.xaml;Window1.xaml;
 
-False
+True
 
