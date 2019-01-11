@@ -1,0 +1,80 @@
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\TestConnection.exe.config
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection.csprojResolveAssemblyReference.cache
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\MainWindow.g.cs
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\PhoneWindow.g.cs
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\App.g.cs
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection_MarkupCompile.cache
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection_MarkupCompile.lref
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\DB.db
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\TestConnection.exe
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\TestConnection.pdb
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\EntityFramework.dll
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\System.Data.SQLite.dll
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\System.Data.SQLite.EF6.dll
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\System.Data.SQLite.Linq.dll
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\EntityFramework.xml
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\bin\Debug\System.Data.SQLite.xml
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\MainWindow.baml
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\PhoneWindow.baml
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection.g.resources
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection.Properties.Resources.resources
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection.csproj.GenerateResource.Cache
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection.exe
+c:\users\саруман\documents\visual studio 2015\Projects\TestConnection\obj\Debug\TestConnection.pdb
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\TestConnection.exe.config
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection.exe
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection.pdb
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\TestConnection.exe
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\TestConnection.pdb
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\EntityFramework.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\System.Data.SQLite.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\EntityFramework.xml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\System.Data.SQLite.xml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection.csprojResolveAssemblyReference.cache
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\MainWindow.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\PhoneWindow.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\App.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection_MarkupCompile.cache
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection_MarkupCompile.lref
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\MainWindow.baml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\PhoneWindow.baml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection.g.resources
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection.Properties.Resources.resources
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\obj\Debug\TestConnection.csproj.GenerateResource.Cache
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite\TestConnection\bin\Debug\DB.db
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\TestConnection.exe.config
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection.exe
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection.pdb
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\DB.db
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\TestConnection.exe
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\TestConnection.pdb
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\EntityFramework.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\System.Data.SQLite.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\EntityFramework.xml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\bin\Debug\System.Data.SQLite.xml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection.csprojResolveAssemblyReference.cache
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\MainWindow.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\PhoneWindow.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\App.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection_MarkupCompile.cache
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection_MarkupCompile.lref
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\MainWindow.baml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\PhoneWindow.baml
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection.g.resources
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection.Properties.Resources.resources
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\TestConnection.csproj.GenerateResource.Cache
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\Window1.g.cs
+C:\Users\Саруман\Documents\GitHub\TestConnectionSqlite - копия\TestConnection\obj\Debug\Window1.baml
+C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\bin\Debug\TestConnection.exe.config
+C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\obj\Debug\TestConnection.exe
+C:\Users\Саруман\Documents\GitHub\CarService2\V2\TestConnection\obj\Debug\TestConnection.pdb
