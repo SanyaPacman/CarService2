@@ -81,8 +81,8 @@
     <Compile Include="Tables\Car.cs" />
     <Compile Include="Tables\Master.cs" />
     <Compile Include="Tables\Work.cs" />
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
+    <Compile Include="ClientWindow.xaml.cs">
+      <DependentUpon>ClientWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -97,11 +97,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PhoneWindow.xaml">
+    <Page Include="CarWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="ClientWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,8 +110,8 @@
     <Compile Include="Tables\Sale.cs" />
     <Compile Include="Tables\Entity.cs" />
     <Compile Include="Tables\Client.cs" />
-    <Compile Include="PhoneWindow.xaml.cs">
-      <DependentUpon>PhoneWindow.xaml</DependentUpon>
+    <Compile Include="CarWindow.xaml.cs">
+      <DependentUpon>CarWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
 using System.Windows;
 using TestConnection.Tables;
 
@@ -35,7 +33,7 @@ namespace TestConnection
         // добавление
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            PhoneWindow phoneWindow = new PhoneWindow(new Client());
+            CarWindow phoneWindow = new CarWindow(new Client());
             if (phoneWindow.ShowDialog() == true)
             {
                 Client phone = phoneWindow.Client;
@@ -51,7 +49,7 @@ namespace TestConnection
             // получаем выделенный объект
             Client Client = phonesList.SelectedItem as Client;
 
-            PhoneWindow phoneWindow = new PhoneWindow(new Client
+            CarWindow carWindow = new CarWindow(new Client
             {
                 Id = Client.Id,
                 SaleId = Client.SaleId,
@@ -59,15 +57,15 @@ namespace TestConnection
                 Name = Client.Name
             });
 
-            if (phoneWindow.ShowDialog() == true)
+            if (carWindow.ShowDialog() == true)
             {
                 // получаем измененный объект
-                Client = db.Clients.Find(phoneWindow.Client.Id);
+                Client = db.Clients.Find(carWindow.Client.Id);
                 if (Client != null)
                 {
-                    Client.SaleId = phoneWindow.Client.SaleId;
-                    Client.Name = phoneWindow.Client.Name;
-                    Client.AllSumm = phoneWindow.Client.AllSumm;
+                    Client.SaleId = carWindow.Client.SaleId;
+                    Client.Name = carWindow.Client.Name;
+                    Client.AllSumm = carWindow.Client.AllSumm;
                     db.Entry(Client).State = EntityState.Modified;
                     db.SaveChanges();
                 }
@@ -82,6 +80,13 @@ namespace TestConnection
             Client phone = phonesList.SelectedItem as Client;
             db.Clients.Remove(phone);
             db.SaveChanges();
+        }
+
+        //кнопка для перехода к списку клиентов
+        public void Button_ClientWindow(object sender, RoutedEventArgs e)
+        {
+            ClientWindow clientWindow = new ClientWindow();
+            clientWindow.Show();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
