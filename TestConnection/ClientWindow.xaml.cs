@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.Entity;
+using TestConnection.Tables;
 
 namespace TestConnection
 {
@@ -19,9 +21,11 @@ namespace TestConnection
     /// </summary>
     public partial class ClientWindow : Window
     {
-        public ClientWindow()
+       // ApplicationContex db;
+        public ClientWindow(ApplicationContex DB)
         {
             InitializeComponent();
+            this.DataContext = DB.Clients.Local.ToBindingList();
         }
 
 

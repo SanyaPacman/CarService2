@@ -26,7 +26,7 @@ namespace TestConnection
             db.Works.Load();
             db.Cars.Load();
             this.DataContext = db.Cars.Local.ToBindingList();
-
+            
             //this.DataContext = db.Masters.Local.ToBindingList();
             //this.DataContext = db.Sales.Local.ToBindingList();
         }
@@ -85,7 +85,7 @@ namespace TestConnection
         //кнопка для перехода к списку клиентов
         public void Button_ClientWindow(object sender, RoutedEventArgs e)
         {
-            ClientWindow clientWindow = new ClientWindow();
+            ClientWindow clientWindow = new ClientWindow(db);
             clientWindow.Show();
         }
 

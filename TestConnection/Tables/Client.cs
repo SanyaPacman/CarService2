@@ -13,7 +13,7 @@ namespace TestConnection.Tables
         private string name;
         private int saleId;
         private int allSumm;
-
+        public Sale Sale { get; set; }
         public string Name
         {
             get { return name; }

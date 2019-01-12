@@ -20,11 +20,24 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="{Binding Mark}" FontSize="16" />
-                        <TextBlock Text="{Binding Model}" FontSize="12" />
-                        <TextBlock Text="{Binding AllSumm}" FontSize="13" />
-                        <ComboBox ItemsSource="{Binding ApplicationContex.Sales }"  FontSize="13" />
-                        <TextBlock Text="{Binding SaleValue }"  FontSize="13"  />
+                        <TextBlock Text="Марка: " FontSize="16">
+                            <Run Text="{Binding Mark}"></Run>
+                        </TextBlock>
+                        <TextBlock Text="Модель: " FontSize="12">
+                            <Run Text="{Binding Model}"></Run>
+                        </TextBlock>
+                        <TextBlock Text="Номер машины: " FontSize="13">
+                            <Run Text="{Binding CarNumber}"></Run>
+                        </TextBlock>
+                        <TextBlock Text="Имя клиента: "  FontSize="13">
+                            <Run Text="{Binding Client.Name}"></Run>
+                        </TextBlock>
+                        <TextBlock Text="Имя мастера: "  FontSize="13">
+                            <Run Text="{Binding Master.Name}"></Run>
+                        </TextBlock>
+                        <TextBlock Text="Тип работы: "  FontSize="13">
+                            <Run Text="{Binding Work.WorkType}"></Run>
+                        </TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

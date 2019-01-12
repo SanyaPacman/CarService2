@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestConnection.Tables
 {
-    class Work: Entity
+    public class Work: Entity
     {
         private string workType;
         private int specificationId;

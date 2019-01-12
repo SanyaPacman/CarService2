@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace TestConnection.Tables
 {
-    class Master:Entity
+    public class Master:Entity
     {
         private string name;
         private int specificationId;
