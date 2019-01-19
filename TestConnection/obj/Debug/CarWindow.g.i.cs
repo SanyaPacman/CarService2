@@ -40,6 +40,14 @@ namespace TestConnection {
     /// </summary>
     public partial class CarWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 45 "..\..\CarWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ComboBox cbWork;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -71,6 +79,9 @@ namespace TestConnection {
             switch (connectionId)
             {
             case 1:
+            this.cbWork = ((System.Windows.Controls.ComboBox)(target));
+            return;
+            case 2:
             
             #line 47 "..\..\CarWindow.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Accept_Click);

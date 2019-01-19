@@ -21,13 +21,16 @@ namespace TestConnection
     public partial class CarWindow : Window
     {
         public Car Car { get; private set; }
-
-        public CarWindow(Car p)
+        ApplicationContex db;
+        public CarWindow(Car p,ApplicationContex DB)
         {
+            db = DB;
             InitializeComponent();
             Car = p;
             this.DataContext = Car;
-            
+            cbWork.ItemsSource = db.Works.Local.ToBindingList();
+            cbWork.DisplayMemberPath = "WorkType";
+            cbWork.SelectedValuePath = "Id";
         }
         private void Accept_Click(object sender, RoutedEventArgs e)
         {
