@@ -135,3 +135,5 @@ C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\Cl
 C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\TestConnection.g.resources
 C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\TestConnection.Properties.Resources.resources
 C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\TestConnection.csproj.GenerateResource.Cache
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\EditingClient.g.cs
+C:\Users\Саруман\Documents\GitHub\CarService2\TestConnection\obj\Debug\EditingClient.baml

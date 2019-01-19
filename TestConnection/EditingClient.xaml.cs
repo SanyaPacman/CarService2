@@ -16,23 +16,22 @@ using TestConnection.Tables;
 namespace TestConnection
 {
     /// <summary>
-    /// Логика взаимодействия для CarWindow.xaml
+    /// Логика взаимодействия для EditingClient.xaml
     /// </summary>
-    public partial class CarWindow : Window
+    public partial class EditingClient : Window
     {
-        public Car Car { get; private set; }
-
-        public CarWindow(Car p)
+        public Client Client { get; private set; }
+        public EditingClient(Client p)
         {
             InitializeComponent();
-            Car = p;
-            this.DataContext = Car;
-            
+            Client = p;
+            this.DataContext = Client;
         }
-        private void Accept_Click(object sender, RoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;
-            
         }
     }
+
 }

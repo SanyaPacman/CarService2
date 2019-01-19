@@ -33,41 +33,47 @@ namespace TestConnection
         // добавление
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            CarWindow phoneWindow = new CarWindow(new Client());
-            if (phoneWindow.ShowDialog() == true)
+            CarWindow carWindow = new CarWindow(new Car());
+            if (carWindow.ShowDialog() == true)
             {
-                Client phone = phoneWindow.Client;
-                db.Clients.Add(phone);
-                db.SaveChanges();
+                Car car = carWindow.Car;
+                db.Cars.Add(car);
+                
             }
         }
         // редактирование
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
             // если ни одного объекта не выделено, выходим
-            if (phonesList.SelectedItem == null) return;
+            if (carList.SelectedItem == null) return;
             // получаем выделенный объект
-            Client Client = phonesList.SelectedItem as Client;
+            Car Car = carList.SelectedItem as Car;
 
-            CarWindow carWindow = new CarWindow(new Client
+            CarWindow carWindow = new CarWindow(new Car
             {
-                Id = Client.Id,
-                SaleId = Client.SaleId,
-                AllSumm = Client.AllSumm,
-                Name = Client.Name
+                Id = Car.Id,
+                CarNumber = Car.CarNumber,
+                Mark = Car.Mark,
+                Model = Car.Model,
+                ClientId= Car.ClientId,
+                MasterId = Car.MasterId,
+                WorkId = Car.WorkId
             });
 
             if (carWindow.ShowDialog() == true)
             {
                 // получаем измененный объект
-                Client = db.Clients.Find(carWindow.Client.Id);
-                if (Client != null)
+                Car = db.Cars.Find(carWindow.Car.Id);
+                if (Car != null)
                 {
-                    Client.SaleId = carWindow.Client.SaleId;
-                    Client.Name = carWindow.Client.Name;
-                    Client.AllSumm = carWindow.Client.AllSumm;
-                    db.Entry(Client).State = EntityState.Modified;
-                    db.SaveChanges();
+                    Car.CarNumber = carWindow.Car.CarNumber;
+                    Car.Mark = carWindow.Car.Mark;
+                    Car.Model = carWindow.Car.Model;
+                    Car.ClientId = carWindow.Car.ClientId;
+                    Car.MasterId = carWindow.Car.MasterId;
+                    Car.WorkId = carWindow.Car.WorkId;
+                    db.Entry(Car).State = EntityState.Modified;             
+                    
                 }
             }
         }
@@ -75,11 +81,11 @@ namespace TestConnection
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             // если ни одного объекта не выделено, выходим
-            if (phonesList.SelectedItem == null) return;
+            if (carList.SelectedItem == null) return;
             // получаем выделенный объект
-            Client phone = phonesList.SelectedItem as Client;
-            db.Clients.Remove(phone);
-            db.SaveChanges();
+            Car car = carList.SelectedItem as Car;
+            db.Cars.Remove(car);
+           
         }
 
         //кнопка для перехода к списку клиентов
@@ -91,7 +97,7 @@ namespace TestConnection
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            
+            db.SaveChanges();
         }
     }
 }

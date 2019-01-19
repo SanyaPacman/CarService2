@@ -78,12 +78,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EditingClient.xaml.cs">
+      <DependentUpon>EditingClient.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tables\Car.cs" />
     <Compile Include="Tables\Master.cs" />
     <Compile Include="Tables\Work.cs" />
     <Compile Include="ClientWindow.xaml.cs">
       <DependentUpon>ClientWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="EditingClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

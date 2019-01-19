@@ -16,7 +16,7 @@
             <Separator />
             <Button Name ="ClientWindow" Content="Список клиентов" Click="Button_ClientWindow" Margin="10,0,10,0" />
         </ToolBar>
-        <ListBox x:Name="phonesList" ItemsSource="{Binding}" Grid.Row="1">
+        <ListBox x:Name="carList" ItemsSource="{Binding}" Grid.Row="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

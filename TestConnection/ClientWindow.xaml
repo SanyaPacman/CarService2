@@ -16,7 +16,7 @@
             <Separator />
             <Button Name ="MainWindow" Content="Назад" Click="Button_MainWindow" Margin="10,0,10,0" />
         </ToolBar>
-        <ListBox x:Name="phonesList" ItemsSource="{Binding}" Grid.Row="1">
+        <ListBox x:Name="clientList" ItemsSource="{Binding}" Grid.Row="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -27,7 +27,7 @@
                         <TextBlock Text="Общая сумма: " FontSize="13" >
                             <Run Text="{Binding AllSumm}"></Run>
                         </TextBlock>
-                        <TextBlock Text="Размер скидки: "  FontSize="13"  >
+                        <TextBlock Text="Размер скидки: "  FontSize="13">
                             <Run Text="{Binding Sale.SaleValue}"></Run>
                         </TextBlock>
                     </StackPanel>

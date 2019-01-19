@@ -13,6 +13,7 @@ namespace TestConnection.Tables
         private string name;
         private int saleId;
         private int allSumm;
+        public ICollection<Car> Cars { get; set; }
         public Sale Sale { get; set; }
         public string Name
         {
