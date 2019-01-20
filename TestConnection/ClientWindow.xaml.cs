@@ -38,7 +38,7 @@ namespace TestConnection
 
         public void Add_Click(object sender, RoutedEventArgs e)
         {
-            EditingClient EditWindow = new EditingClient(new Client());
+            EditingClient EditWindow = new EditingClient(new Client(), db);
             if (EditWindow.ShowDialog() == true)
             {
                 Client Client = EditWindow.Client;
@@ -59,7 +59,7 @@ namespace TestConnection
                 Name = Client.Name,
                 SaleId = Client.SaleId,
                 AllSumm = Client.AllSumm
-            });
+            }, db);
 
             if (EditWindow.ShowDialog() == true)
             {

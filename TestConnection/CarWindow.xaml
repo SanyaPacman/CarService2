@@ -33,16 +33,16 @@
         <TextBlock Text="Номер" />
         <TextBlock Text="Марка" Grid.Row="1" />
         <TextBlock Text="Модель" Grid.Row="2" />
-        <TextBlock Text="Id клиента" Grid.Row="3" />
-        <TextBlock Text="Id мастера" Grid.Row="4" />
-        <TextBlock Text="Id работы" Grid.Row="5" />
+        <TextBlock Text="ФИО клиента" Grid.Row="3" />
+        <TextBlock Text="ФИО мастера" Grid.Row="4" />
+        <TextBlock Text="Тип работы" Grid.Row="5" />
 
         <TextBox Text="{Binding CarNumber}" Grid.Column="1" Grid.ColumnSpan="2" />
         <TextBox Text="{Binding Model}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" />
         <TextBox Text="{Binding Mark}" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
-        <TextBox Text="{Binding ClientId}" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" />
-        <TextBox Text="{Binding MasterId}" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" />        
-        <ComboBox  Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Name="cbWork" />
+        <ComboBox  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Name="cbClient" SelectionChanged="cbClient_SelectionChanged"/>
+        <ComboBox  Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Name="cbMaster" SelectionChanged="cbMaster_SelectionChanged"/>
+        <ComboBox  Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Name="cbWork" SelectionChanged="CbWork_SelectionChanged"/>
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="26,0">
             <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="5">OK</Button>
             <Button IsCancel="True" MinWidth="60" Margin="5">Отмена</Button>

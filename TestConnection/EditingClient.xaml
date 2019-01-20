@@ -27,13 +27,13 @@
             <ColumnDefinition Width="151*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Text="ФИО" />
-        <TextBlock Text="Id скидки" Grid.Row="1" />
+        <TextBlock Text="Размер скидки" Grid.Row="1" />
         <TextBlock Text="Сумма" Grid.Row="2" />
 
         <TextBox Text="{Binding Name}" Grid.Column="1" Grid.ColumnSpan="2" />
-        <TextBox Text="{Binding SaleId}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" />
+
+        <ComboBox Name="cbSale" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="cbSale_SelectionChanged"/>
         <TextBox Text="{Binding AllSumm}" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" />
-        <TextBox Text="{Binding SaleId}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" />
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="26,0">
                 <Button IsDefault="True" Click="Button_Click" MinWidth="60" Margin="5">OK</Button>
                 <Button IsCancel="True" MinWidth="60" Margin="5">Отмена</Button>

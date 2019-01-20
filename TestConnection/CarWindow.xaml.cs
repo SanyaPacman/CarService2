@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using TestConnection.Tables;
 using System.Data.Entity;
 
+
 namespace TestConnection
 {
     /// <summary>
@@ -29,6 +30,16 @@ namespace TestConnection
             InitializeComponent();
             Car = p;
             this.DataContext = Car;
+
+            //combobox с клиентом
+            cbClient.ItemsSource = db.Clients.Local.ToBindingList();
+            cbClient.DisplayMemberPath = "Name";
+            cbClient.SelectedValuePath = "Id";
+            //combobox с мастером
+            cbMaster.ItemsSource = db.Masters.Local.ToBindingList();
+            cbMaster.DisplayMemberPath = "Name";
+            cbMaster.SelectedValuePath = "Id";
+            // combobox с типом работы
             cbWork.ItemsSource = db.Works.Local.ToBindingList();
             cbWork.DisplayMemberPath = "WorkType";
             cbWork.SelectedValuePath = "Id";
@@ -37,6 +48,19 @@ namespace TestConnection
         {
             this.DialogResult = true;
             
+        }
+
+        private void cbMaster_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Car.MasterId = cbMaster.SelectedIndex + 1;
+        }
+        private void cbClient_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Car.ClientId = cbClient.SelectedIndex + 1;
+        }
+        private void CbWork_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Car.WorkId = cbWork.SelectedIndex + 1;
         }
     }
 }
