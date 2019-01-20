@@ -9,7 +9,6 @@ namespace TestConnection.Tables
     public class Work: Entity
     {
         private string workType;
-        private int specificationId;
         private int price;
 
         public string WorkType
@@ -19,15 +18,6 @@ namespace TestConnection.Tables
             {
                 workType = value;
                 OnPropertyChanged("WorkType");
-            }
-        }
-        public int SpecificationId
-        {
-            get { return specificationId; }
-            set
-            {
-                specificationId = value;
-                OnPropertyChanged("SpecificationId");
             }
         }
         public int Price

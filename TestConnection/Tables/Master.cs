@@ -11,7 +11,6 @@ namespace TestConnection.Tables
     public class Master:Entity
     {
         private string name;
-        private int specificationId;
 
 
         public string Name
@@ -21,15 +20,6 @@ namespace TestConnection.Tables
             {
                 name = value;
                 OnPropertyChanged("Name");
-            }
-        }
-        public int SpecificationId
-        {
-            get { return specificationId; }
-            set
-            {
-                specificationId = value;
-                OnPropertyChanged("SpecificationId");
             }
         }
     }    
