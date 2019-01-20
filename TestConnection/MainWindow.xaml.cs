@@ -33,7 +33,7 @@ namespace TestConnection
         // добавление
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            CarWindow carWindow = new CarWindow(new Car());
+            CarWindow carWindow = new CarWindow(new Car(),db);
             if (carWindow.ShowDialog() == true)
             {
                 Car car = carWindow.Car;
@@ -58,7 +58,7 @@ namespace TestConnection
                 ClientId= Car.ClientId,
                 MasterId = Car.MasterId,
                 WorkId = Car.WorkId
-            });
+            },db);
 
             if (carWindow.ShowDialog() == true)
             {
@@ -72,9 +72,9 @@ namespace TestConnection
                     Car.ClientId = carWindow.Car.ClientId;
                     Car.MasterId = carWindow.Car.MasterId;
                     Car.WorkId = carWindow.Car.WorkId;
-                    db.Entry(Car).State = EntityState.Modified;             
-                    
+                    db.Entry(Car).State = EntityState.Modified;                    
                 }
+                carList.Items.Refresh();
             }
         }
         // удаление
@@ -84,8 +84,7 @@ namespace TestConnection
             if (carList.SelectedItem == null) return;
             // получаем выделенный объект
             Car car = carList.SelectedItem as Car;
-            db.Cars.Remove(car);
-           
+            db.Cars.Remove(car);           
         }
 
         //кнопка для перехода к списку клиентов

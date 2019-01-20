@@ -72,6 +72,7 @@ namespace TestConnection
                     Client.SaleId = EditWindow.Client.SaleId;
                     db.Entry(Client).State = EntityState.Modified;
                 }
+                clientList.Items.Refresh();
             }
         }
 
