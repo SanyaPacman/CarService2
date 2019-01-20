@@ -43,7 +43,7 @@ namespace TestConnection
 
         private void cbSale_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Client.SaleId = cbSale.SelectedIndex + 1;
+            Client.SaleId = (int)cbSale.SelectedValue;            
         }
     }
 

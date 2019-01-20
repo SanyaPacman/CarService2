@@ -38,7 +38,7 @@ namespace TestConnection
             {
                 Car car = carWindow.Car;
                 db.Cars.Add(car);
-                
+                db.SaveChanges();
             }
         }
         // редактирование
@@ -72,7 +72,8 @@ namespace TestConnection
                     Car.ClientId = carWindow.Car.ClientId;
                     Car.MasterId = carWindow.Car.MasterId;
                     Car.WorkId = carWindow.Car.WorkId;
-                    db.Entry(Car).State = EntityState.Modified;                    
+                    db.Entry(Car).State = EntityState.Modified;
+                    db.SaveChanges();
                 }
                 carList.Items.Refresh();
             }
@@ -84,7 +85,8 @@ namespace TestConnection
             if (carList.SelectedItem == null) return;
             // получаем выделенный объект
             Car car = carList.SelectedItem as Car;
-            db.Cars.Remove(car);           
+            db.Cars.Remove(car);
+            db.SaveChanges();
         }
 
         //кнопка для перехода к списку клиентов
@@ -94,9 +96,6 @@ namespace TestConnection
             clientWindow.Show();
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
-        {
-            db.SaveChanges();
-        }
+
     }
 }

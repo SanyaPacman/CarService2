@@ -52,15 +52,15 @@ namespace TestConnection
 
         private void cbMaster_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Car.MasterId = cbMaster.SelectedIndex + 1;
+            Car.MasterId = (int)cbMaster.SelectedValue;
         }
         private void cbClient_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Car.ClientId = cbClient.SelectedIndex + 1;
+            Car.ClientId = (int)cbClient.SelectedValue;
         }
         private void CbWork_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Car.WorkId = cbWork.SelectedIndex + 1;
+            Car.WorkId = (int)cbWork.SelectedValue;
         }
     }
 }

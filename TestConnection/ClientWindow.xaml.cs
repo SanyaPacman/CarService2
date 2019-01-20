@@ -40,9 +40,10 @@ namespace TestConnection
         {
             EditingClient EditWindow = new EditingClient(new Client(), db);
             if (EditWindow.ShowDialog() == true)
-            {
+            {               
                 Client Client = EditWindow.Client;
                 db.Clients.Add(Client);
+                db.SaveChanges();
             }
         }
           
@@ -71,6 +72,7 @@ namespace TestConnection
                     Client.AllSumm = EditWindow.Client.AllSumm;
                     Client.SaleId = EditWindow.Client.SaleId;
                     db.Entry(Client).State = EntityState.Modified;
+                    db.SaveChanges();
                 }
                 clientList.Items.Refresh();
             }
@@ -82,11 +84,9 @@ namespace TestConnection
             // получаем выделенный объект
             Client Client = clientList.SelectedItem as Client;
             db.Clients.Remove(Client);
+            db.SaveChanges();
         }
 
-        public void Save_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }
