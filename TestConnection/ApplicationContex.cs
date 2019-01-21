@@ -3,7 +3,7 @@ using TestConnection.Tables;
 
 namespace TestConnection
 {
-    class ApplicationContex:DbContext 
+    public class ApplicationContex:DbContext 
     {
         public ApplicationContex():base("DefaultConnection")
         {

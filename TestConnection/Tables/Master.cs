@@ -8,10 +8,9 @@ using System.Runtime.CompilerServices;
 
 namespace TestConnection.Tables
 {
-    class Master:Entity
+    public class Master:Entity
     {
         private string name;
-        private int specificationId;
 
 
         public string Name
@@ -21,15 +20,6 @@ namespace TestConnection.Tables
             {
                 name = value;
                 OnPropertyChanged("Name");
-            }
-        }
-        public int SpecificationId
-        {
-            get { return specificationId; }
-            set
-            {
-                specificationId = value;
-                OnPropertyChanged("SpecificationId");
             }
         }
     }    

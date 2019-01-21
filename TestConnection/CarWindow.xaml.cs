@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TestConnection.Tables;
+using System.Data.Entity;
+
 
 namespace TestConnection
 {
@@ -20,18 +22,45 @@ namespace TestConnection
     /// </summary>
     public partial class CarWindow : Window
     {
-        public Client Client { get; private set; }
-
-        public CarWindow(Client p)
+        public Car Car { get; private set; }
+        ApplicationContex db;
+        public CarWindow(Car p,ApplicationContex DB)
         {
+            db = DB;
             InitializeComponent();
-            Client = p;
-            this.DataContext = Client;
-        }
+            Car = p;
+            this.DataContext = Car;
 
+            //combobox с клиентом
+            cbClient.ItemsSource = db.Clients.Local.ToBindingList();
+            cbClient.DisplayMemberPath = "Name";
+            cbClient.SelectedValuePath = "Id";
+            //combobox с мастером
+            cbMaster.ItemsSource = db.Masters.Local.ToBindingList();
+            cbMaster.DisplayMemberPath = "Name";
+            cbMaster.SelectedValuePath = "Id";
+            // combobox с типом работы
+            cbWork.ItemsSource = db.Works.Local.ToBindingList();
+            cbWork.DisplayMemberPath = "WorkType";
+            cbWork.SelectedValuePath = "Id";
+        }
         private void Accept_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;
+            
+        }
+
+        private void cbMaster_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Car.MasterId = (int)cbMaster.SelectedValue;
+        }
+        private void cbClient_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Car.ClientId = (int)cbClient.SelectedValue;
+        }
+        private void CbWork_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Car.WorkId = (int)cbWork.SelectedValue;
         }
     }
 }

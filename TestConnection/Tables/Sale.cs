@@ -9,6 +9,7 @@ namespace TestConnection.Tables
     public class Sale: Entity
     {
         private int saleValue;
+        public ICollection<Client> Client { get; set; }
         public int SaleValue
         {
             get { return saleValue; }

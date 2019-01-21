@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.Entity;
+using TestConnection.Tables;
 
 namespace TestConnection
 {
@@ -19,9 +21,13 @@ namespace TestConnection
     /// </summary>
     public partial class ClientWindow : Window
     {
-        public ClientWindow()
+        ApplicationContex db;
+        // ApplicationContex db;
+        public ClientWindow(ApplicationContex DB)
         {
             InitializeComponent();
+            db = DB;
+            this.DataContext = db.Clients.Local.ToBindingList();
         }
 
 
@@ -32,22 +38,55 @@ namespace TestConnection
 
         public void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            EditingClient EditWindow = new EditingClient(new Client(), db);
+            if (EditWindow.ShowDialog() == true)
+            {               
+                Client Client = EditWindow.Client;
+                db.Clients.Add(Client);
+                db.SaveChanges();
+            }
         }
           
         public void Edit_Click(object sender, RoutedEventArgs e)
         {
+            // если ни одного объекта не выделено, выходим
+            if (clientList.SelectedItem == null) return;
+            // получаем выделенный объект
+            Client Client = clientList.SelectedItem as Client;
 
+            EditingClient EditWindow = new EditingClient(new Client
+            {
+                Id = Client.Id,
+                Name = Client.Name,
+                SaleId = Client.SaleId,
+                AllSumm = Client.AllSumm
+            }, db);
+
+            if (EditWindow.ShowDialog() == true)
+            {
+                // получаем измененный объект
+                Client = db.Clients.Find(EditWindow.Client.Id);
+                if (Client != null)
+                {
+                    Client.Name = EditWindow.Client.Name;
+                    Client.AllSumm = EditWindow.Client.AllSumm;
+                    Client.SaleId = EditWindow.Client.SaleId;
+                    db.Entry(Client).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+                clientList.Items.Refresh();
+            }
         }
 
         public void Delete_Click(object sender, RoutedEventArgs e)
         {
-
+            if (clientList.SelectedItem == null) return;
+            // получаем выделенный объект
+            Client Client = clientList.SelectedItem as Client;
+            db.Clients.Remove(Client);
+            db.SaveChanges();
         }
 
-        public void Save_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }

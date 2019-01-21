@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestConnection.Tables
 {
-    class Car : Entity
+    public class Car : Entity
     {
         private string carNumber;
         private string mark;
@@ -14,6 +14,9 @@ namespace TestConnection.Tables
         private int clientId;
         private int masterId;
         private int workId;
+        public Client Client { get; set; }
+        public Master Master { get; set; }
+        public Work Work { get; set; }
         public string CarNumber
         {
             get { return carNumber; }
